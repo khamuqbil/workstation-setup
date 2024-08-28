@@ -1,0 +1,120 @@
+<h1 id="workstation-configuration-steps">Workstation Configuration Steps</h1>
+<h2 id="pre-domain-joining-setup">🛠️ Pre-Domain Joining Setup</h2>
+<ol type="1">
+<li><strong>Configure Network Settings:</strong></li>
+</ol>
+<ul>
+<li><strong>Note:</strong> Ensure that you have the correct IP configurations provided by your IT administrator before proceeding.
+<ul>
+<li>Navigate to <strong>Network &amp; Internet settings</strong>.</li>
+<li>Go to <strong>Properties</strong> for your network connection.</li>
+<li>Select <strong>Internet Protocol Version 4 (TCP/IPv4)</strong>.</li>
+<li>Click on <strong>Properties</strong> and manually configure the following:
+<ul>
+<li><strong>IP Address</strong></li>
+<li><strong>Subnet Mask</strong></li>
+<li><strong>Default Gateway</strong>: After entering the default gateway, click on <strong>Advanced</strong>.</li>
+<li><strong>DNS Settings</strong>: Add the four IP addresses for DNS.</li>
+</ul></li>
+<li><strong>Warning:</strong> Incorrect IP configuration can cause network connectivity issues. Double-check all entries before proceeding.</li>
+</ul></li>
+</ul>
+<h2 id="joining-the-domain">🏢 Joining the Domain</h2>
+<ol type="1">
+<li><strong>Join the Workstation to the Domain:</strong>
+<ul>
+<li><strong>Important:</strong> Make sure you have your domain user credentials ready for the next login.</li>
+<li>Log in using your domain user credentials.</li>
+<li><strong>Note:</strong> If the domain join fails, ensure that the network settings are correct and that the workstation has network access to the domain controller.</li>
+</ul></li>
+</ol>
+<h2 id="post-domain-joining-setup">🔧 Post-Domain Joining Setup</h2>
+<ol type="1">
+<li><strong>Enable Windows Features:</strong>
+<ul>
+<li>Navigate to <strong>Apps &amp; features</strong>.</li>
+<li>Click on <strong>Turn Windows features on or off</strong>.</li>
+<li>Look for <strong>MSMQ Server</strong> and check all the options under it.</li>
+<li>Apply changes and restart the workstation if prompted.</li>
+<li><strong>Warning:</strong> Missing features can cause certain applications to fail. Ensure that all required features are enabled.</li>
+</ul></li>
+</ol>
+<h2 id="copying-files-from-another-workstation">📁 Copying Files from Another Workstation</h2>
+<ol type="1">
+<li><strong>Copy Necessary Files:</strong>
+<ul>
+<li><strong>Important:</strong> Ensure that the files being copied are up to date and relevant to the new workstation’s role.</li>
+<li>Copy the <strong>Camille</strong> folder to the <code>C:</code> drive.</li>
+<li>Copy any necessary <strong>menus</strong> and <strong>airline apps</strong> from the other workstation to the appropriate locations on the new workstation.</li>
+<li><strong>Note:</strong> Verify that all copied applications are functioning correctly after the transfer.</li>
+</ul></li>
+</ol>
+<h2 id="configuring-certificates">🔒 Configuring Certificates</h2>
+<ol type="1">
+<li><strong>Import ZScaler Certificate:</strong>
+<ul>
+<li>Open <strong>Run</strong> (<code>Win + R</code>), type <code>mmc</code>, and press Enter to open the Microsoft Management Console.</li>
+<li>In the console, go to <strong>File</strong> &gt; <strong>Add/Remove Snap-in</strong>.</li>
+<li>Select <strong>Certificates</strong> and choose <strong>Computer account</strong>, then click <strong>Next</strong> and <strong>Finish</strong>.</li>
+<li>In the left pane, expand <strong>Certificates</strong> &gt; <strong>Trusted Root Certification Authorities</strong>.</li>
+<li>Right-click on <strong>Trusted Root Certification Authorities</strong> and select <strong>All Tasks</strong> &gt; <strong>Import</strong>.</li>
+<li>Click <strong>Next</strong>, browse to <code>C:\Camille\</code> and select <strong>ZScaler.crt</strong>.</li>
+<li>Complete the import by clicking <strong>Next</strong> &gt; <strong>Finish</strong>.</li>
+<li><strong>Warning:</strong> An incorrect certificate installation can result in security warnings or connectivity issues. Ensure you select the correct certificate file.</li>
+</ul></li>
+</ol>
+<h2 id="proxy-configuration">🌐 Proxy Configuration</h2>
+<ol type="1">
+<li><strong>Configure Proxy Settings:</strong>
+<ul>
+<li>Go to <strong>Settings</strong> &gt; <strong>Network &amp; Internet</strong> &gt; <strong>Proxy</strong>.</li>
+<li>Under <strong>Manual proxy setup</strong>, add the following address: <code>185.46.212.90</code>.</li>
+<li><strong>Note:</strong> Ensure that the proxy address is correct and authorized by your network administrator.</li>
+<li>Open the <strong>Camille</strong> folder and open the <code>newtextdoc.txt</code>.</li>
+<li>Copy the second line from <code>newtextdoc.txt</code> and paste it into Microsoft Edge’s address bar.</li>
+</ul></li>
+<li><strong>Run Locator:</strong>
+<ul>
+<li>Navigate to the <strong>Camille</strong> folder and run the <strong>Locator</strong> file.</li>
+<li>Go to the <code>ajflck</code> folder within the <strong>Camille</strong> folder.</li>
+<li>Copy the <code>nodename.lck</code> file to the <strong>Camille</strong> folder.</li>
+<li>Update the <strong>ring</strong> and then open the Command Prompt.</li>
+<li>Navigate to the <strong>Camille</strong> folder and run the <code>.lck</code> file.</li>
+<li><strong>Warning:</strong> Each workstation has a unique ring number. Ensure the correct ring number is used to avoid configuration errors.</li>
+</ul></li>
+</ol>
+<h2 id="final-configuration-steps">🧩 Final Configuration Steps</h2>
+<ol type="1">
+<li><strong>Install APC Prerequisites:</strong>
+<ul>
+<li>In the <strong>Camille</strong> folder, click on <strong>APC_Perequasete</strong> and follow the prompts until the installation is complete.</li>
+<li>Restart the computer when prompted.</li>
+<li><strong>Note:</strong> If the installation fails, check that all previous steps have been completed correctly.</li>
+</ul></li>
+<li><strong>Create Necessary Folders:</strong>
+<ul>
+<li>Navigate to <code>C:\SITA</code>.</li>
+<li>Create a new folder named <strong>Cash</strong> under <code>C:\SITA\temp</code>.</li>
+<li>Create another folder named <strong>LCKFile</strong> under <code>C:\SITA</code>.</li>
+<li><strong>Note:</strong> Ensure that folder names are spelled correctly to avoid file path errors later on.</li>
+</ul></li>
+<li><strong>Run Services and Installations:</strong>
+<ul>
+<li>In the <strong>Camille</strong> folder, go to <strong>flexadapterservice</strong> and run the <strong>SITAFlexAdapterService</strong> file.</li>
+<li>Run <strong>APC_CUTE.msi</strong> from the <strong>Camille</strong> folder.</li>
+<li>Run <strong>PROD-edgeConfig.reg</strong> to apply the necessary registry settings.</li>
+<li><strong>Warning:</strong> Always back up the registry before making changes. Incorrect registry settings can cause system instability.</li>
+</ul></li>
+<li><strong>Configure LCK Utility:</strong>
+<ul>
+<li>The <strong>LCK Utility Tool GUI</strong> will open.</li>
+<li>Run <strong>LCKUtilityTools.exe</strong>.</li>
+<li>In the LCK Utility Tool, select the <code>nodename.lck</code> file you copied earlier.</li>
+<li>Set the <strong>LCK Storage Path</strong> to <code>C:\SITA\LCKFile</code> and click <strong>Update</strong>.</li>
+<li>Restart the computer.</li>
+<li><strong>Note:</strong> Double-check the storage path to ensure that all files are correctly saved and accessible.</li>
+</ul></li>
+</ol>
+<footer>
+  <p>{{ site.title }} - {{ site.copyright }}</p>
+</footer>
