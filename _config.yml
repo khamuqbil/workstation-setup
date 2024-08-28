@@ -4,17 +4,13 @@ subtitle: "Step-by-Step Instructions for Pre-Domain Setup, Domain Joining, and P
 description: "This document is a detailed guide for IT professionals tasked with setting up and configuring workstations. This work was the resulte of collaboration (Mohammed Mamdouh), (Hamzah Alanazi),and Thanks to (Rayed Ammorah)." 
 author: "Khalid Alkhaldi"
 theme: minima
-
-authors:
-  khalid-alkhaldi:
-    name: "Khalid Alkhaldi"
-    avatar: "/assets/img/khalid.png"
-  mohammed-mamdouh:
-    name: "Mohammed Mamdouh"
-  hamzah-alanazi:
-    name: "Hamzah Alanazi"
-# Auther and collaborators 
 copyright: "© 2024 AJF FEs"
+
+collaborators:
+  - name: "Mohammed Mamdouh"
+  - name: "Hamzah Alanazi"
+    
+# Auther and collaborators 
 
 
 # Other configurations
