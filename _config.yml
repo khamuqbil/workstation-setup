@@ -1,7 +1,13 @@
-title: Work Station Configuration Setup
-description: This is a Documentation for seting-up new workstation.
+title: "Comprehensive Workstation Configuration Guide"
+subtitle: "Step-by-Step Instructions for Pre-Domain Setup, Domain Joining, and Post-Configuration"
+description: "This document is a detailed guide for IT professionals tasked with setting up and configuring workstations in a domain environment, meticulously taught by [Raed Ammorah]. It covers essential steps from pre-domain setup, such as network configuration and joining a domain, to post-domain tasks like enabling Windows features, copying necessary files, and configuring security certificates. Following these instructions ensures that workstations are fully operational, secure, and aligned with organizational standards. The guide also includes important warnings and notes to prevent common errors, ensuring a smooth and efficient setup process.."
 author: "Khalid Alkhaldi"
-copyright: "© 2024 AJF FE.Khalid Alkhaldi"
+copyright: "© 2024 AJF FEs"
+
+collaborators:
+  - name: "Mohammed Mamdouh"
+  - name: "Hamzah Alanazi"
+
 # Other configurations
 markdown: kramdown
 theme: minima
