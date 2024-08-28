@@ -5,13 +5,17 @@ description: "This document is a detailed guide for IT professionals tasked with
 
 remote_theme: cotes2020/jekyll-theme-chirpy
 
+authors:
+  khalid-alkhaldi:
+    name: "Khalid Alkhaldi"
+    avatar: "/assets/img/khalid.png"
+  mohammed-mamdouh:
+    name: "Mohammed Mamdouh"
+  hamzah-alanazi:
+    name: "Hamzah Alanazi"
 # Auther and collaborators 
-author: "Khalid Alkhaldi"
 copyright: "© 2024 AJF FEs"
 
-collaborators:
-  - name: "Mohammed Mamdouh"
-  - name: "Hamzah Alanazi"
 
 # Other configurations
 markdown: kramdown

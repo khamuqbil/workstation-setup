@@ -1,0 +1,16 @@
+
+<header>
+  <h1>{{ site.title }}</h1>
+  <h2>{{ site.subtitle }}</h2> <!-- Display subtitle here -->
+</header>
+
+
+
+<section>
+  <h3>Collaborators</h3>
+  <ul>
+    {% for collaborator in site.collaborators %}
+      <li>{{ collaborator.name }}</li>
+    {% endfor %}
+  </ul>
+</section>
