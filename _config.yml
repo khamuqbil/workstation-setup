@@ -1,8 +1,7 @@
 # Site setting 
 title: "Comprehensive Workstation Configuration Guide"
 subtitle: "Step-by-Step Instructions for Pre-Domain Setup, Domain Joining, and Post-Configuration"
-description: "This document is a detailed guide for IT professionals tasked with setting up and configuring workstations in a domain environment, meticulously taught by [Raed Ammorah]. It covers essential steps from pre-domain setup, such as network configuration and joining a domain, to post-domain tasks like enabling Windows features, copying necessary files, and configuring security certificates. Following these instructions ensures that workstations are fully operational, secure, and aligned with organizational standards. The guide also includes important warnings and notes to prevent common errors, ensuring a smooth and efficient setup process.."
-
+description: "This document is a detailed guide for IT professionals tasked with setting up and configuring workstations. This work was the resulte of collaboration (Mohammed Mamdouh), (Hamzah Alanazi),and Thanks to (Rayed Ammorah)." 
 remote_theme: cotes2020/jekyll-theme-chirpy
 
 authors:

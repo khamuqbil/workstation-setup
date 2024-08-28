@@ -1,4 +1,3 @@
-#  Workstation Configuration Steps
 
 ## 🛠️ Pre-Domain Joining Setup
 
