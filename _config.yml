@@ -1,5 +1,11 @@
 title: Work Station Configuration Setup
 description: This is a Documentation for seting-up new workstation.
-theme: minima
 author: "Khalid Alkhaldi"
 copyright: "© 2024 AJF FE.Khalid Alkhaldi"
+# Other configurations
+markdown: kramdown
+theme: minima
+
+# Optional: Set up navigation
+header_pages:
+  - README.md
