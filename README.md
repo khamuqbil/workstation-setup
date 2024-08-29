@@ -87,10 +87,20 @@
    - Run **APC_CUTE.msi** from the **Camille** folder.
    - Run **PROD-edgeConfig.reg** to apply the necessary registry settings.
    - **Warning:** Always back up the registry before making changes. Incorrect registry settings can cause system instability.
-   - under `C:\SITA\APC\FAS\appsettings.` update `"Proxy":{
-       "serverAddress": "123.45.678.90:9400"` add the proxy to it.
 
-4. **Configure LCK Utility:**
+4. **Update APC Proxy Settings:**
+   - Locate and open the `appsettings.json` file under `C:\SITA\APC\FAS\`.
+   - Find the `"Proxy"` section.
+   - Update the `"serverAddress"` field with the correct proxy address:
+     ```json
+     "Proxy": {
+       "serverAddress": "123.45.678.90:9400"
+     }
+     ```
+   - Save the changes to the `appsettings.json` file.
+
+---
+5. **Configure LCK Utility:**
    - The **LCK Utility Tool GUI** will open.
    - Run **LCKUtilityTools.exe**.
    - In the LCK Utility Tool, select the `nodename.lck` file you copied earlier.
