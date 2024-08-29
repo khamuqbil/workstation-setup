@@ -97,9 +97,8 @@
        "serverAddress": "123.45.678.90:9400"
      }
      ```
-   - Save the changes to the `appsettings.json` file.
+    - **Warning** Save the changes to the `appsettings.json` file.
 
----
 5. **Configure LCK Utility:**
    - The **LCK Utility Tool GUI** will open.
    - Run **LCKUtilityTools.exe**.
@@ -108,3 +107,4 @@
    - Restart the computer.
    - **Note:** Double-check the storage path to ensure that all files are correctly saved and accessible.
 
+---
