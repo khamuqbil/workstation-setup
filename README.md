@@ -54,10 +54,11 @@
 
 1. **Configure Proxy Settings:**
    - Go to **Settings** > **Network & Internet** > **Proxy**.
-   - Under **Manual proxy setup**, add the following address: `185.46.212.90`.
+   - Under **Manual proxy setup**, add the following address: `123.45.567.10:9400`.
    - **Note:** Ensure that the proxy address is correct and authorized by your network administrator.
    - Open the **Camille** folder and open the `newtextdoc.txt`.
    - Copy the second line from `newtextdoc.txt` and paste it into Microsoft Edge’s address bar.
+   - Copy the `msiexzec` command and run it on `cmd`.
 
 2. **Run Locator:**
    - Navigate to the **Camille** folder and run the **Locator** file.
@@ -85,6 +86,8 @@
    - Run **APC_CUTE.msi** from the **Camille** folder.
    - Run **PROD-edgeConfig.reg** to apply the necessary registry settings.
    - **Warning:** Always back up the registry before making changes. Incorrect registry settings can cause system instability.
+   - under `C:\SITA\APC\FAS\appsettings.` update `"Proxy":{
+       "serverAddress": "123.45.789.10"` add the proxy to it.
 
 4. **Configure LCK Utility:**
    - The **LCK Utility Tool GUI** will open.
